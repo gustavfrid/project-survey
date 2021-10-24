@@ -4,6 +4,7 @@ import { SubmitSurvey } from 'components/SubmitSurvey'
 import { QuestionWrapper } from 'components/questions/QuestionWrapper'
 
 export const FormWrapper = ({
+  data,
   step,
   setStep,
   state,
@@ -16,6 +17,7 @@ export const FormWrapper = ({
     <form className='form'>
       {step !== 'submit' && (
         <QuestionWrapper
+          data={data}
           step={step}
           setStep={setStep}
           state={state}

@@ -4,11 +4,11 @@ import { FormWrapper } from 'components/FormWrapper'
 import { FormSummary } from 'components/FormSummary'
 import { ProgressBar } from 'components/ProgressBar'
 
-import data from 'assets/data.json'
+import initialData from 'assets/data.json'
 
 export const App = () => {
+  const [data, setData] = useState(initialData)
   const initialState = { nextQuestion: 0, questions: data.questions.length, answers: [] }
-
   const [state, setState] = useState(initialState)
   const [step, setStep] = useState(0)
   const [steps, setSteps] = useState([0])
@@ -71,6 +71,7 @@ export const App = () => {
         {step === 0 && <StartSurvey incrementStep={incrementStep} />}
         {(step > 0 || step === 'submit') && (
           <FormWrapper
+            data={data}
             step={step}
             setStep={setStep}
             state={state}

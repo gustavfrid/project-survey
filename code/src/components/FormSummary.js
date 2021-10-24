@@ -26,7 +26,6 @@ export const FormSummary = ({ state, decrementStep, handleRestart, step }) => {
         )
       })}
       <div className='button-container'>
-        {step === 'end' && <Button text={''} type={'up'} onClick={decrementStep} />}
         {step === 'end' && <Button text={'Reset'} onClick={handleRestart} />}
       </div>
     </div>

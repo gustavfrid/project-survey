@@ -1,14 +1,18 @@
 import React from 'react'
 import 'components/formWrapper.css'
-import data from 'assets/data.json'
 import { TextInput } from 'components/questions/TextInput'
 import { Radio } from 'components/questions/Radio'
 import { DropDown } from 'components/questions/DropDown'
 import { Range } from 'components/questions/Range'
 
-console.log(data)
-
-export const QuestionWrapper = ({ step, state, handleChange, incrementStep, decrementStep }) => {
+export const QuestionWrapper = ({
+  data,
+  step,
+  state,
+  handleChange,
+  incrementStep,
+  decrementStep,
+}) => {
   return (
     <>
       {data.questions

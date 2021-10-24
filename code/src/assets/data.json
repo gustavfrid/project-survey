@@ -6,8 +6,8 @@
       "required": true,
       "type": "radio",
       "options": [
-        { "label": "Yes", "value": "Yes", "id": "radioYes", "next_question": "submit" },
-        { "label": "No", "value": "No", "id": "radioNo" }
+        { "label": "Yes", "id": "radioYes", "value": "Yes", "next_question": "submit" },
+        { "label": "No", "id": "radioNo", "value": "No" }
       ],
       "id": 1
     },
@@ -37,9 +37,9 @@
       "required": false,
       "type": "radio",
       "options": [
-        { "label": "Yes", "value": "Yes", "id": "radioYes" },
-        { "label": "No", "value": "No", "id": "radioNo", "next_question": "end" },
-        { "label": "Skip two questions", "value": "Skip", "id": "radioSkip", "next_question": 7 }
+        { "label": "Yes", "id": "radioYes", "value": "Yes" },
+        { "label": "No", "id": "radioNo", "value": "No", "next_question": "end" },
+        { "label": "Skip two questions", "id": "radioSkip", "value": "Skip", "next_question": 7 }
       ],
       "id": 4
     },
@@ -50,7 +50,7 @@
       "type": "dropdown",
       "label": "Select color",
       "options": [
-        { "label": "Select an option", "value": "default", "hidden": true },
+        { "label": "Select a color", "value": "default", "hidden": true },
         { "label": "Green", "value": "Green", "hidden": false },
         { "label": "Blue", "value": "Blue", "hidden": false },
         { "label": "Red", "value": "Red", "hidden": false }
