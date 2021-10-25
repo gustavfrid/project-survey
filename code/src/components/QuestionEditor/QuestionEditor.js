@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import 'components/QuestionEditor/questionEditor.css'
+import { EditText } from 'components/QuestionEditor/EditText'
 
 // import { Heading } from 'components/Heading'
 import { Button } from 'components/Button'
@@ -16,7 +17,7 @@ export const QuestionEditor = ({ data, setData }) => {
 
   const Question = ({ question }) => {
     if (question.type === 'text') {
-      return <div>{question.type}</div>
+      return <EditText question={question} />
     } else if (question.type === 'radio') {
       return <div>{question.type}</div>
     } else if (question.type === 'dropdown') {
