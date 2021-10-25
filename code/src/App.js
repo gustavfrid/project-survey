@@ -3,7 +3,7 @@ import { StartSurvey } from 'components/StartSurvey'
 import { FormWrapper } from 'components/FormWrapper'
 import { FormSummary } from 'components/FormSummary'
 import { ProgressBar } from 'components/ProgressBar'
-import { QuestionEditor } from 'components/QuestionEditor'
+import { QuestionEditor } from 'components/QuestionEditor/QuestionEditor'
 
 import initialData from 'assets/data.json'
 
@@ -11,7 +11,7 @@ export const App = () => {
   const [data, setData] = useState(initialData)
   const initialState = { nextQuestion: 0, questions: data.questions.length, answers: [] }
   const [state, setState] = useState(initialState)
-  const [step, setStep] = useState(0)
+  const [step, setStep] = useState('edit')
   const [steps, setSteps] = useState([0])
   const [colorTheme, setColorTheme] = useState('blue')
 
