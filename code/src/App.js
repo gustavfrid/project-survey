@@ -3,6 +3,7 @@ import { StartSurvey } from 'components/StartSurvey'
 import { FormWrapper } from 'components/FormWrapper'
 import { FormSummary } from 'components/FormSummary'
 import { ProgressBar } from 'components/ProgressBar'
+import { QuestionEditor } from 'components/QuestionEditor'
 
 import initialData from 'assets/data.json'
 
@@ -68,7 +69,8 @@ export const App = () => {
     <div className={colorTheme} style={{ height: '100vh' }}>
       {(step > 0 || step === 'submit') && <ProgressBar state={state} steps={steps} />}
       <div className={'container'}>
-        {step === 0 && <StartSurvey incrementStep={incrementStep} />}
+        {step === 0 && <StartSurvey setStep={setStep} incrementStep={incrementStep} />}
+        {step === 'edit' && <QuestionEditor data={data} setData={setData} />}
         {(step > 0 || step === 'submit') && (
           <FormWrapper
             data={data}
