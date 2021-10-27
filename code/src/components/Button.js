@@ -34,6 +34,7 @@ export const Button = ({ disabled, onClick, text, type, customStyle }) => {
           alt='edit icon'
         />
       )}
+
       {text}
     </button>
   )

@@ -6,8 +6,8 @@
       "required": true,
       "type": "radio",
       "options": [
-        { "label": "Yes", "id": "radioYes", "value": "Yes", "next_question": "submit" },
-        { "label": "No", "id": "radioNo", "value": "No" }
+        { "label": "Yes", "id": "radio_1_0", "value": "Yes", "next_question": "submit" },
+        { "label": "No", "id": "radio_1_1", "value": "No" }
       ],
       "id": 1
     },
@@ -17,8 +17,8 @@
       "required": false,
       "type": "text",
       "options": [
-        { "label": "First name", "id": "firstName", "placeholder": "Type your first name" },
-        { "label": "Last name", "id": "lastName", "placeholder": "Type your last name" }
+        { "label": "First name", "id": "text_2_0", "placeholder": "Type your first name" },
+        { "label": "Last name", "id": "text_2_1", "placeholder": "Type your last name" }
       ],
       "id": 2
     },
@@ -28,7 +28,9 @@
       "number": 3,
       "required": true,
       "type": "range",
-      "options": [{ "label": "Select an option", "min": "1", "max": "100", "value": "50" }],
+      "options": [
+        { "label": "Select an option", "id": "range_3_0", "min": "1", "max": "100", "value": "50" }
+      ],
       "id": 3
     },
     {
@@ -37,9 +39,9 @@
       "required": false,
       "type": "radio",
       "options": [
-        { "label": "Yes", "id": "radioYes", "value": "Yes" },
-        { "label": "No", "id": "radioNo", "value": "No", "next_question": "end" },
-        { "label": "Skip two questions", "id": "radioSkip", "value": "Skip", "next_question": 7 }
+        { "label": "Yes", "id": "radio_4_0", "value": "Yes" },
+        { "label": "No", "id": "radio_4_1", "value": "No", "next_question": "end" },
+        { "label": "Skip two questions", "id": "radio_4_2", "value": "Skip", "next_question": 7 }
       ],
       "id": 4
     },
@@ -50,10 +52,10 @@
       "type": "dropdown",
       "label": "Select color",
       "options": [
-        { "label": "Select a color", "value": "default", "hidden": true },
-        { "label": "Green", "value": "Green", "hidden": false },
-        { "label": "Blue", "value": "Blue", "hidden": false },
-        { "label": "Red", "value": "Red", "hidden": false }
+        { "label": "Select a color", "id": "dropdown_5_0", "value": "default", "hidden": true },
+        { "label": "Green", "id": "dropdown_5_1", "value": "Green", "hidden": false },
+        { "label": "Blue", "id": "dropdown_5_2", "value": "Blue", "hidden": false },
+        { "label": "Red", "id": "dropdown_5_3", "value": "Red", "hidden": false }
       ],
       "id": 5
     },
@@ -65,7 +67,7 @@
       "options": [
         {
           "label": "Dream job",
-          "id": "dreamJob",
+          "id": "text_6_0",
           "placeholder": "Type your dream job",
           "next_question": "submit"
         }

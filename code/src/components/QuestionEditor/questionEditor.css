@@ -1,12 +1,17 @@
 .question-wrapper {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  gap: 10px;
+  /* justify-content: space-between; */
+}
+.question-wrapper p {
+  margin: 0;
 }
 
 .edit-button-container {
   display: flex;
-  align-items: center;
+  margin-left: auto;
+  /* align-items: center; */
 }
 
 .edit-button {
